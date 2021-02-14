@@ -1,0 +1,34 @@
+{
+  "name": "21-more-on-styled-components",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "lru-cache": "^6.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.2",
+    "styled-components": "^5.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-dev-utils": "^11.0.2"
+  }
+}
