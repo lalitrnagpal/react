@@ -9,23 +9,22 @@ const Cockpit = (props) => {
     let btnClass = '';
 
     if (props.showPersons) {
-        btnClass = 'greenButton';
-    } else {
-        btnClass = 'redButton';
+        btnClass = classes.Red;
     }
 
-    if (props.persons.length <= 2) {
-        assignedClasses.push('red')
+    if ( props.persons.length <= 2 ) {
+      assignedClasses.push( classes.red ); // classes = ['red']
     }
-    if (props.persons.length <= 1) {
-        assignedClasses.push('bold')
+    if ( props.persons.length <= 1 ) {
+      assignedClasses.push( classes.bold ); // classes = ['red', 'bold']
     }
+
 
     return(
         <div className="App">
             <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to React!</h1>
+                <img src={logo} className="App-logo" alt="logo" />
+                <h1 className="App-title">{props.appTitle}</h1>
             </header>
             <p className={assignedClasses.join(' ')}>This is working!</p>
             <button onClick={props.clicked} className={btnClass}>Toggle Persons</button>

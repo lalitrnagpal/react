@@ -7,17 +7,17 @@
   font-weight: bold;
 }
 
-.Cockpit button {
-  border: 1px solid blue;
+button {
+  border: 1px solid black;
   padding: 16px;
-  background-color: green;
+  background-color: red;
   font: inherit;
   color: white;
   cursor: pointer;
 }
 
-.Cockpit button:hover {
-  background-color: lightgreen;
+button:hover {
+  background-color: salmon;
   color: black;
 }
 
