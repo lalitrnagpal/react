@@ -38,13 +38,11 @@ class App extends Component {
     let persons = null;
 
     if (this.state.showPersons) {
-      persons = (
-        <PersonList
+      persons = <PersonList
           persons={this.state.persons}
           clicked={this.deletePersonsHandler}
           changed={this.nameChangeHandler}
         />
-      );
     }
 
     return ( 

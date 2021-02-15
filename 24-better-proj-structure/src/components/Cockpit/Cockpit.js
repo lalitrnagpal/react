@@ -9,9 +9,9 @@ const Cockpit = (props) => {
     let btnClass = '';
 
     if (props.showPersons) {
-        btnClass = classes.red;
+        btnClass = 'greenButton';
     } else {
-        btnClass = classes.green;
+        btnClass = 'redButton';
     }
 
     if (props.persons.length <= 2) {
@@ -28,7 +28,7 @@ const Cockpit = (props) => {
             <h1 className="App-title">Welcome to React!</h1>
             </header>
             <p className={assignedClasses.join(' ')}>This is working!</p>
-            <button onClick={props.clicked} style={btnClass}>Toggle Persons</button>
+            <button onClick={props.clicked} className={btnClass}>Toggle Persons</button>
             <br/><br/>
         </div>
     );
