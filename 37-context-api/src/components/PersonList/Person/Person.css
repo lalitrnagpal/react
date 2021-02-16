@@ -1,0 +1,25 @@
+.Person {
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 4px;
+    border: 1px solid darkgray;
+    box-shadow: 0 4px 10px rgb(170, 169, 169);
+    background-color:Gainsboro;
+    font-family: 'Arial';
+    font-size: 14px;
+    padding: 16px;
+    text-align: center;
+}
+
+.inputText {
+    padding: 4px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color:seashell;
+}
+
+@media (min-width: 500px) {
+    .Person {
+        width: 450px;
+    }
+}

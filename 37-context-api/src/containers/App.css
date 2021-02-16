@@ -1,0 +1,16 @@
+.redButton{
+    border: 1px solid black;
+    padding: 3px;
+    background-color: red;
+    display: inline-block;
+    width: 180px;
+    border-radius: 1px;
+    font-family: 'Arial';
+    font-size: 14px;
+    color: white;
+    cursor: pointer;    
+}
+
+.redButton:hover {
+    background-color: darkorange;
+}
