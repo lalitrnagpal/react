@@ -1,10 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import './Cockpit.css';
 import AuthContext from '../../context/auth-context';
 
 const cockpit = props => {
 
   const assignedClasses = [];
+  const authContext = useContext(AuthContext);
+
+  console.log( 'authContext authenticated -> ' + authContext.authenticated) ;
+
   let btnClass = '';
   if (props.showPersons) {
     btnClass = 'red';
@@ -25,11 +29,7 @@ const cockpit = props => {
         Toggle Persons
       </button>
       &nbsp;&nbsp;
-      <AuthContext.Consumer>
-        {
-          (context) => <button className='greenButton' onClick={context.login}>Log In</button>
-        }
-      </AuthContext.Consumer>
+      <button className='greenButton' onClick={authContext.login}>Log In</button>
     </div>
   );
 };

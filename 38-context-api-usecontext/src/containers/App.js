@@ -21,33 +21,11 @@ class App extends Component {
       { id: 'key4', name: 'Nyra Nagpal', age: 6 }
     ],
     otherState: 'some other value',
-    showPersons: false,
+    showPersons: true,
     showCockpit: true,
     changeCounter: 0,
     authenticated: false
   };
-
-  static getDerivedStateFromProps(props, state) {
-    console.log('[App.js] getDerivedStateFromProps', props);
-    return state;
-  }
-
-  // componentWillMount() {
-  //   console.log('[App.js] componentWillMount');
-  // }
-
-  componentDidMount() {
-    console.log('[App.js] componentDidMount');
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log('[App.js] shouldComponentUpdate');
-    return true;
-  }
-
-  componentDidUpdate() {
-    console.log('[App.js] componentDidUpdate');
-  }
 
   loginHandler = () => {
     this.setState(
@@ -68,14 +46,11 @@ class App extends Component {
       ...this.state.persons[personIndex]
     };
 
-    // const person = Object.assign({}, this.state.persons[personIndex]);
-
     person.name = event.target.value;
 
     const persons = [...this.state.persons];
     persons[personIndex] = person;
 
-    // this.setState({ persons: persons, changeCounter: this.state.changeCounter + 1 });
     this.setState((prevState, props) => {
         return {
           persons: persons,
@@ -85,7 +60,6 @@ class App extends Component {
   };
 
   deletePersonHandler = personIndex => {
-    // const persons = this.state.persons.slice();
     const persons = [...this.state.persons];
     persons.splice(personIndex, 1);
     this.setState({ persons: persons });

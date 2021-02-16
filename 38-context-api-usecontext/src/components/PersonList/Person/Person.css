@@ -18,6 +18,18 @@
     background-color:seashell;
 }
 
+.red {
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.green {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 12px;
+}
+
 @media (min-width: 500px) {
     .Person {
         width: 450px;
