@@ -1,0 +1,10 @@
+.BuildControlList{
+    width: 100%;
+    background-color: lightsteelblue;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    box-shadow: 0 8px 8px darkgray;
+    margin: auto;
+    padding: 10px, 0;
+}
