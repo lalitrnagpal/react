@@ -1,0 +1,20 @@
+.OrderTitle{
+    background-color: blueviolet;
+    box-shadow: 0 4px 6px darkslategray;
+    color: white;
+    border-radius: 4px;   
+    text-align: center;
+}
+.CheckoutTitle {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    font-size: 12;
+    width: max-content;
+    box-shadow: 0 4px 6px darkslategray;
+    margin-left: 35%;  
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
