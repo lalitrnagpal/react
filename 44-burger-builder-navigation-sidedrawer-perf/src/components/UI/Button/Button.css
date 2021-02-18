@@ -1,0 +1,44 @@
+.Button {
+    background-color: #F0F0F0;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font: inherit;
+    font-size: 9px;
+    width: 60px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 4px 4px dimgray;
+}
+
+.Button:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.Success {
+    color: green;
+}
+
+.Danger {
+    color: red;
+}
+
+@media (min-width: 600px) {
+    .Button {
+        background-color: #F0F0F0;
+        color: black;
+        cursor: pointer;
+        border: none;
+        font: inherit;
+        font-size: 12px;
+        padding: 5px;
+        width: 120px;
+        height: 40px;
+        font-weight: bold;
+        border-radius: 6px;
+        box-shadow: 0 4px 4px dimgray;
+    }
+    
+}

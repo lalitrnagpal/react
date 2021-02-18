@@ -1,0 +1,60 @@
+.NavigationItem {
+    margin: 2px;
+    width: 140px;
+    box-sizing: border-box;
+    display: block;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.NavigationItem a {
+    color: white;
+    width: 140px;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: white;
+    height: 30px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.hover {
+    text-decoration: underline;
+    color: red;
+    font-weight: bold;
+}
+
+@media (min-width: 500px) {
+    .NavigationItem {
+        margin: 30px 0;
+        width: auto;
+        margin-right: 5px;
+        font-size: 14px;
+        color: blue;
+        align-items: center;
+    }
+    
+    .NavigationItem a {
+        color: white;
+        background-color: blue;
+        width: 160px;
+        height: 30px;
+        text-align: center;
+        font-size: 14px;
+        padding: 6px 4px;
+    }
+    
+    .NavigationItem a:hover,
+    .NavigationItem a:active,
+    .NavigationItem a.hover {
+        font-size: 14px;
+        height: 40px;
+        color: white;
+        text-decoration: none;
+        background-color: blueviolet;
+        border-bottom: 4px solid red;
+    }
+}
