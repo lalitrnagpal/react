@@ -1,0 +1,70 @@
+.BuildControlList{
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: auto;
+    padding: 10px, 0;
+    border-radius: 80px;
+}
+
+
+.OrderButton {
+    width: auto;
+    height: 25px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid darkgray;
+    border-radius: 6px;
+    color: dodgerblue;
+    font-family: inherit;
+    font-size: 0.8em;
+    box-shadow: 4px 4px 4px darkgray;
+}
+
+.OrderButton:hover, .OrderButton:active {
+    background-color: dodgerblue;
+    border: 1px solid gray;
+    color: white;
+    box-shadow: 4px 4px 4px darkgray;
+}
+
+.OrderButton:disabled {
+    background-color: #C7C6C6;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    color: #888888;
+}
+
+.OrderButton:not(:disabled) {
+    animation: enable 0.3s linear;
+}
+
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 700px) {
+    .OrderButton {
+        width: 350px;
+        height: 40px;
+        background-color: white;
+        outline: none;
+        cursor: pointer;
+        border: 1px solid darkgray;
+        border-radius: 12px;
+        color: dodgerblue;
+        font-family: inherit;
+        font-size: 1.2em;
+        box-shadow: 4px 4px 4px darkgray;
+    }
+}

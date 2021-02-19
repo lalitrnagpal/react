@@ -1,0 +1,126 @@
+.OrderTitle{
+    background-color: blueviolet;
+    box-shadow: 0 4px 6px darkslategray;
+    color: white;
+    border-radius: 4px;   
+    text-align: center;
+}
+.CheckoutTitle {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    font-size: 8px;
+    width: max-content;
+    height: 12px;
+    display: flex;
+    margin-left: 35%;  
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.Price {
+    width: auto;
+    background-color: blue;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 8px 8px gray;
+    color: white;
+    align-content: center;
+    height: 20px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;   
+}
+
+.CancelButton {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+    height: 30px;
+    vertical-align: center;
+    width: 50px;
+    box-shadow: 0 1px 1px orange;
+}
+.ContinueButton {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    vertical-align: center;
+    font-size: 10px;
+    height: 30px;
+    width: 50px;
+    box-shadow: 0 1px 1px greenyellow;
+}
+.ButtonDiv {
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-flow: row;
+}
+
+@media (min-width: 600px) {
+    .OrderTitle{
+        background-color: blueviolet;
+        box-shadow: 0 4px 6px darkslategray;
+        color: white;
+        border-radius: 4px;   
+        text-align: center;
+    }
+    .CheckoutTitle {
+        background-color: blueviolet;
+        color: white;
+        text-align: center;
+        font-size: 12;
+        width: max-content;
+        height: 20px;
+        display: flex;
+        margin-left: 35%;  
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    
+    .Price {
+        width: max-content;
+        background-color: blue;
+        border-radius: 4px;
+        text-align: center;
+        box-shadow: 0 8px 8px gray;
+        color: white;
+        align-content: center;
+        height: 20px;
+        display: flex;
+        margin-left: 35%;  
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;   
+    }
+    
+    .CancelButton {
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        height: 60px;
+        width: 120px;
+        box-shadow: 0 3px 3px orange;
+    }
+    .ContinueButton {
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+        height: 60px;
+        width: 120px;
+        box-shadow: 0 3px 3px greenyellow;
+    }
+    .ButtonDiv {
+        text-align: center;
+    }    
+}
