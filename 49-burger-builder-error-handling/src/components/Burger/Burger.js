@@ -7,6 +7,7 @@ const Burger = (props) => {
     // since ingredient in BurgerIngredients is a object
     // convert that to a array in order to be able to map
     // through it
+
     let transformedIngredients = 
              Object.keys( props.ingredients )
                    .map( ingredientKey => {
